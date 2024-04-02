@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+    <html>
+        <head>
+            <title>Snake Family</title>
+            <!-- Lier la page html au css -->
+            <link rel="stylesheet" type="text/css" href="css/styles.css">
+        </head>
+    
+    <!-- Corp de la page -->
+        <body >
+            <h1>Bonnetau Of Snake Family</h1>
+            <div class="container">
+                <div class="cards">
+                    <div class="card" >
+                        <div class="front">
+                            <img class="card-img" src="./img/arc1.png" width="200">                
+                        </div> 
+                        <div class="back"></div>
+                    </div>
+                    <div class="card" onclick="flip(event)">
+                        <div class="front">
+                            <img class="card-img" src="./img/arc2.png" width="200">                
+                        </div> 
+                        <div class="back"></div>
+                    </div> 
+                    <div class="card" onclick="flip(event)">
+                        <div class="front">
+                            <img class="card-img" src="./img/arc3.png" width="200">                
+                        </div> 
+                        <div class="back"></div>
+                    </div>  
+                    <div class="card" onclick="flip(event)">
+                        <div class="front">
+                            <img class="card-img" src="./img/arc4.png" width="200">                
+                        </div> 
+                        <div class="back"></div>
+                    </div> 
+                    <div class="card" onclick="flip(event)">
+                        <div class="front">
+                            <img class="card-img" src="./img/arc5.png" width="200">                
+                        </div> 
+                        <div class="back"></div>
+                    </div>
+                    <div class="card" onclick="flip(event)">
+                        <div class="front">
+                            <img class="card-img" src="./img/arc6.png" width="200">                
+                        </div> 
+                        <div class="back"></div>
+                    </div>                 
+                </div>  
+                <button id="shuffleButton">Mélanger les images</button>
+          
+            </div>
+            <script src="script.js"></script>
+        </body>
+    </html>
+    
