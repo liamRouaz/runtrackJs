@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <title>Document</title>
+</head>
+<body class="bg-gray-100 p-4">
+  <header>
+    <nav class="bg-white border-gray-200 dark:bg-gray-900">
+      <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl p-4">
+          <a href="https://flowbite.com" class="flex items-center space-x-3 rtl:space-x-reverse">
+              <img src="https://flowbite.com/docs/images/logo.svg" class="h-8" alt="Flowbite Logo" />
+              <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Flowbite</span>
+          </a>
+          <div class="flex items-center space-x-6 rtl:space-x-reverse">
+              <a href="tel:5541251234" class="text-sm  text-gray-500 dark:text-white hover:underline">(555) 412-1234</a>
+              <a href="#" class="text-sm  text-blue-600 dark:text-blue-500 hover:underline">Login</a>
+          </div>
+      </div>
+    </nav>
+    <nav class="bg-gray-50 dark:bg-gray-700">
+      <div class="max-w-screen-xl px-4 py-3 mx-auto">
+          <div class="flex items-center">
+              <ul class="flex flex-row font-medium mt-0 space-x-8 rtl:space-x-reverse text-sm">
+                  <li>
+                      <a href="#" class="text-gray-900 dark:text-white hover:underline" aria-current="page">Accueil</a>
+                  </li>
+                  <li>
+                      <a href="#" class="text-gray-900 dark:text-white hover:underline">Inscription</a>
+                  </li>
+                  <li>
+                      <a href="#" class="text-gray-900 dark:text-white hover:underline">Navigation</a>
+                  </li>
+                  <li>
+                      <a href="#" class="text-gray-900 dark:text-white hover:underline">Recherche</a>
+                  </li>
+              </ul>
+          </div>
+      </div>
+    </nav>
+  </header>
+  <div class="max-w-md mx-auto bg-white p-6 rounded-md shadow-md">
+    <h2 class="text-2xl font-semibold mb-4">Formulaire</h2>
+    <div class="mb-4">
+      <span class="text-gray-700">Civilité:</span><br>
+      <input type="radio" id="mr" name="gender" value="mr" class="mr-1">
+      <label for="mr" class="mr-4">Monsieur</label>
+      <input type="radio" id="mrs" name="gender" value="mrs" class="mr-1">
+      <label for="mrs">Madame</label>
+    </div>
+    <!-- Inputs de type text pour prénom, nom et adresse -->
+    <div class="mb-4">
+      <label for="first_name" class="block text-sm font-medium text-gray-700 mb-1">Prénom:</label>
+      <input type="text" id="first_name" name="first_name" class="form-input w-full">
+    </div>
+    <div class="mb-4">
+      <label for="last_name" class="block text-sm font-medium text-gray-700 mb-1">Nom:</label>
+      <input type="text" id="last_name" name="last_name" class="form-input w-full">
+    </div>
+    <div class="mb-4">
+      <label for="address" class="block text-sm font-medium text-gray-700 mb-1">Adresse:</label>
+      <input type="text" id="address" name="address" class="form-input w-full">
+    </div>
+    <!-- Inputs de type password pour le mot de passe et sa validation -->
+    <div class="mb-4">
+      <label for="password" class="block text-sm font-medium text-gray-700 mb-1">Mot de passe:</label>
+      <input type="password" id="password" name="password" class="form-input w-full">
+    </div>
+    <div class="mb-4">
+      <label for="confirm_password" class="block text-sm font-medium text-gray-700 mb-1">Confirmer le mot de passe:</label>
+      <input type="password" id="confirm_password" name="confirm_password" class="form-input w-full">
+    </div>
+    <!-- Checkbox pour choisir ses passions -->
+    <div class="mb-4">
+      <span class="text-gray-700">Passions:</span><br>
+      <input type="checkbox" id="computing" name="passions" value="computing" class="mr-1">
+      <label for="computing" class="mr-4">Informatique</label>
+      <input type="checkbox" id="travel" name="passions" value="travel" class="mr-1">
+      <label for="travel" class="mr-4">Voyages</label>
+      <input type="checkbox" id="sport" name="passions" value="sport" class="mr-1">
+      <label for="sport" class="mr-4">Sport</label>
+      <input type="checkbox" id="reading" name="passions" value="reading">
+      <label for="reading">Lecture</label>
+    </div>
+
+    <!-- Bouton pour valider le formulaire -->
+    <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600">Valider</button>
+  </div>
+  
+</body>
+</html>
